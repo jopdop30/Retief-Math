@@ -8,12 +8,12 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/login', function(req, res) {
-    res.sendfile(__dirname + '/login.html');
+app.get('/pirate-game', function(req, res) {
+    res.sendfile(__dirname + '/pirategame.html');
 });
 
-app.get('/cmd', function(req, res) {
-    res.sendfile(__dirname + '/cmd.html');
+app.get('/picross', function(req, res) {
+    res.sendfile(__dirname + '/picross.html');
 });
 
 io.on('connection', function(socket){
